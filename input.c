@@ -12,7 +12,7 @@ bool read_input(info_t *info)
 	char *line = NULL, *temp = NULL;
 
 	if (info->interactive)
-		write(STDERR_FILENO, "$ ", 2);
+		write(STDERR_FILENO, ";} ", 2);
 
 	info->lineno += 1;
 	while (_read_input(&info->line, info->fileno) &
